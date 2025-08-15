@@ -13,6 +13,36 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 </head>
+
+<!-- Tag Pembuat -->
+<style>
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  .tag-pembuat {
+    position: fixed;
+    bottom: 8px;
+    right: 12px;
+    font-size: 13px;
+    font-family: sans-serif;
+    background: rgba(255, 105, 180, 0.85);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    z-index: 999;
+    animation: fadeIn 0.8s ease forwards, pulse 2s ease-in-out infinite;
+  }
+</style>
+
+<div class="tag-pembuat">
+   folllow <b>ig:@rivelazione</b>
+</div>  
 <body>
     <!-- Musik Latar -->
     <audio src="KATAKAN CINTA.mp3" id="linkmp3" class="sembunyi"></audio>
